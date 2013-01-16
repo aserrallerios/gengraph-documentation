@@ -1,0 +1,40 @@
+Alcance del proyecto GENgraph
+
+1-Documentación
+	1.1-Datos Genealógicos
+		1.1.1-Panorama actual
+		1.1.2-Formatos de trasmisión de datos
+			1.1.2.1-Especificación GEDCOM
+			1.1.2.2-Especificación GEDCOMX
+				1.1.2.2.1-Modelo de Datos
+				1.1.2.2.2-Fichero GEDCOMX
+	1.2-Grafos
+		1.2.1-Teoría de grafos
+		1.2.1-Paradigma noSQL - GraphDB
+		1.2.2-API Neo4J
+	1.4-Propuesta tecnológica del sistema
+		1.4.1-¿Por qué JAVA?
+		1.4.2-Framework Web
+		1.4.3-Diseño
+			1.4.3.1-Modelo de clases (sólo código própio)
+			1.4.3.2-Casos de uso
+			1.4.3.3-Prototipos Web
+	1.3-Herramientas
+		1.3.1-Git
+	1.-Bibliografía
+
+2-Sistema
+	2.1-Web de importación/manipulación de datos genéticos mediante una BD en grafo
+		2.1.1-Entrada de datos
+			2.1.1.1-El sistema debe leer ficheros formato GEDCOM 5
+			2.1.1.2-El sistema adopta el standard GEDCOMX por tanto también leerá el fichero GEDCOMX			
+			2.1.1.3-Se utilizarán las APIs de FAMILY SEARCH que permiten leer fichero GEDCOMX y GEDCOM 5 
+			2.1.1.4-Internamente se trabajará con el modelo de datos que propone GEDCOMX
+		2.1.2-Almacenamiento de datos
+			2.1.2.1-Se creará un módulo reutilizable capaz de almacenar datos GEDCOMX en una GraphDB
+			2.1.2.2-Se utilizará la API neo4J
+		2.1.3-Casos de uso
+			2.1.3.1-Exportar los datos del grafo al formato GEDCOM 5
+		2.1.4-Código abierto
+			2.1.4.1-Código en github
+			2.1.4.2-Distribución Maven
