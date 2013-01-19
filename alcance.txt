@@ -9,7 +9,8 @@ Alcance del proyecto GENgraph
 				1.1.2.2.1-Modelo de Datos
 				1.1.2.2.2-XML
 				1.1.2.2.3-Fichero GEDCOM X
-	1.2-Grafos
+			1.1.2.3-Otras especificaciones GEdcom (Gedcom 6.0, ...)
+	1.2-Grafos (o vols dir GraphDB)
 		1.2.1-Teoría de grafos
 		1.2.1-Paradigma noSQL - GraphDB
 		1.2.2-API Neo4J
@@ -23,6 +24,10 @@ Alcance del proyecto GENgraph
 	1.4-Herramientas
 		1.4.1-Git
 	1.X-Bibliografía
+
+NECESSITAT I OPORTUNITAT DEL PROJECTE
+STAKEHOLDERS
+OBJECTIUS DEL PROJECTE
 
 2-Requisitos del Sistema
 	2.1-Web de importación/manipulación de datos genéticos mediante una BD en grafo
