@@ -21,30 +21,41 @@ Alcance del proyecto GENgraph
 		1.5.2-API Neo4J
 	1.6-Sistema desarrollado
 		1.6.1-Descripción de la solución
-			1.6.1.1-Casos de uso
-			1.6.1.2-Prototipos
-			1.6.1.3-Modelo Grafo GEDCOM X
 		1.6.2-Librería de persistencia GEDCOM X
-			1.6.2.1-Interfaz del Servicio
-			1.6.2.2-Wrappers de nodos
-			1.6.2.3-Capa DAO Neo4j
-			1.6.2.4-Diseño
-				1.6.2.4.1-UML de clases
-				1.6.2.4.2-Casos de uso
-			1.6.2.5-Tecnología utilizada
-				1.6.2.5.2-Neo4j
-				1.6.2.5.3-Guice
-				1.6.2.5.4-Reflections				
+			1.6.1.1-Modelo en Grafo GEDCOM X
+			1.6.2.2-Interfaz del Servicio
+			1.6.2.3-Wrappers de nodos
+			1.6.2.4-Capa DAO Neo4j
+			1.6.2.5-Búsquedas
+				1.6.2.5.1-Búsquedas predeterminadas
+				1.6.2.5.2-Búsquedas por atributos
+				1.6.2.5.3-Búsquedas dinámicas
+			1.6.2.6-Diseño
+				1.6.2.6.1-UML de clases
+				1.6.2.6.2-Casos de uso
+			1.6.2.7-Tecnología utilizada
+				1.6.2.7.1-Neo4j
+				1.6.2.7.2-Guice
+				1.6.2.7.3-Reflections				
 		1.6.3-Capa de visualización
-			
-			1.6.3.-Tecnología utilizada
-				1.6.3..1-d3			
-		1..-Herramientas
-			1...1-Git
-			1..2.5.5-Maven
-			1..-Bubbl (brainstorming)
-			1..-
-	1.X-Bibliografía
+			1.6.3.1-Interfaz asíncrona REST
+			1.6.3.2-Visualización y búsquedas sobre el grafo
+			1.6.3.3-Manipulación del grafo
+			1.6.3.4-Diseño
+				1.6.3.4.1-UML de clases
+				1.6.3.4.2-Casos de uso
+				1.6.3.4.3-Prototipos
+			1.6.3.5-Tecnología utilizada
+				1.6.3.5.1-Servidor
+				1.6.3.5.1-d3			
+		1.6.4-Herramientas
+			1.6.4.1-Git
+			1.6.4.2-Bubbl (brainstorming)
+			1.6.4.3-Creately, DIA, Modelio (diagramas)
+			1.6.4.5-IDE y plugins
+			1.6.4.6-Blog/project
+	1.7-Bibliografía
+
 2-Requisitos del Sistema
 	2.1-Web de importación/manipulación de datos genéticos mediante una BD en grafo
 		2.1.1-Entrada y salida de datos
