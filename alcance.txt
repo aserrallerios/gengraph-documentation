@@ -1,80 +1,85 @@
 Alcance del proyecto GENgraph
+==================
 
-1-Documentación
-	1.1-Necesidad y oportunidad
-	1.2-Stakeholders
-	1.3-Objetivos	
-	1.4-Datos Genealógicos
-		1.4.1-Panorama actual
-		1.4.2-Formatos de trasmisión de datos
-			1.4.2.1-Especificación GEDCOM 5
-			1.4.2.2-Especificación GEDCOM X
-				1.4.2.2.1-Modelo de Datos
-				1.4.2.2.3-Fichero GEDCOM X
-				1.4.2.2.4-Problemáticas
-					1.4.2.2.4.1-Especificación no cerrada
-					1.4.2.2.4.2-Falta de herramientas para desarrollo
-			1.4.2.3-Otras especificaciones Gedcom (Gedcom 6.0, ...)
-	1.5-Grafos
-		1.5.1-Teoría de grafos
-		1.5.1-Paradigma noSQL - GraphDB
-		1.5.2-API Neo4J
-	1.6-Sistema desarrollado
-		1.6.1-Descripción de la solución
-		1.6.2-Librería de persistencia GEDCOM X
-			1.6.1.1-Modelo en Grafo GEDCOM X
-			1.6.2.2-Interfaz del Servicio
-			1.6.2.3-Wrappers de nodos
-			1.6.2.4-Capa DAO Neo4j
-			1.6.2.5-Búsquedas
-				1.6.2.5.1-Búsquedas predeterminadas
-				1.6.2.5.2-Búsquedas por atributos
-				1.6.2.5.3-Búsquedas dinámicas
-			1.6.2.6-Diseño
-				1.6.2.6.1-UML de clases
-				1.6.2.6.2-Casos de uso
-			1.6.2.7-Tecnología utilizada
-				1.6.2.7.1-Neo4j
-				1.6.2.7.2-Guice
-				1.6.2.7.3-Reflections				
-		1.6.3-Capa de visualización
-			1.6.3.1-Interfaz asíncrona REST
-			1.6.3.2-Visualización y búsquedas sobre el grafo
-			1.6.3.3-Manipulación del grafo
-			1.6.3.4-Diseño
-				1.6.3.4.1-UML de clases
-				1.6.3.4.2-Casos de uso
-				1.6.3.4.3-Prototipos
-			1.6.3.5-Tecnología utilizada
-				1.6.3.5.1-Servidor
-				1.6.3.5.1-d3			
-		1.6.4-Herramientas
-			1.6.4.1-Git
-			1.6.4.2-Bubbl (brainstorming)
-			1.6.4.3-Creately, DIA, Modelio (diagramas)
-			1.6.4.5-IDE y plugins
-			1.6.4.6-Blog/project
-	1.7-Bibliografía
-
-2-Requisitos del Sistema
-	2.1-Web de importación/manipulación de datos genéticos mediante una BD en grafo
-		2.1.1-Entrada y salida de datos
-			2.1.1.1-El sistema debe leer ficheros formato GEDCOM 5
-			2.1.1.2-El sistema adopta el estándar GEDCOM X y trabajará internamente con el modelo que propone GEDCOM X			
-			2.1.1.3-El sistema debe permitir exportar los datos del grafo a un fichero 5 y X
-			2.1.1.4-Se utilizarán las APIs de FAMILY SEARCH que permiten leer y escribir ficheros 5 y X			
-		2.1.2-Almacenamiento de datos
-			2.1.2.1-Se creará un módulo reutilizable capaz de almacenar datos GEDCOM X en una GraphDB
-			2.1.2.2-Se utilizará la API neo4J
-		2.1.3-Casos de uso
-			2.1.3.1-Importar los datos de un fichero GEDCOM 5 o GEDCOM X
-			2.1.3.2-Exportar los datos del grafo al formato GEDCOM 5 o GEDCOM X
-			2.1.3.3-Operaciones sobre el grafo
-				2.1.3.3.1-Editar atributos de entidades
-				2.1.3.3.
-		2.1.4-Documentación del código
-			2.1.4.1-Javadoc
-			2.1.4.2-Tests unitarios
-		2.1.4-Código abierto
-			2.1.4.1-Código en github
-			2.1.4.2-Distribución Maven
+1. Documentación
+    1. Necesidad y oportunidad
+	2. Stakeholders
+	3. Objetivos
+	4. Datos Genealógicos
+		1. Panorama actual
+		2. Formatos de trasmisión de datos
+			1. Especificación GEDCOM 5
+			2. Especificación GEDCOM X
+				1. Modelo de Datos
+				3. Fichero GEDCOM X
+				4. Problemáticas
+					1. Especificación no cerrada
+					2. Falta de herramientas para desarrollo
+			3. Otras especificaciones Gedcom (Gedcom 6.0, ...)
+	5. Grafos
+		1. Teoría de grafos
+		2. Paradigma noSQL - GraphDB
+		3. API Neo4J
+	6. Sistema desarrollado
+		1. Descripción de la solución
+		2. Diseño
+		3. Librería de persistencia GEDCOM X
+			1. Modelo en Grafo GEDCOM X
+			2. Interfaz del Servicio
+			3. Wrappers de nodos
+			4. Capa DAO Neo4j
+			5. Búsquedas
+				1. Búsquedas predeterminadas
+				2. Búsquedas por atributos
+				3. Búsquedas dinámicas
+			6. Diseño
+				1. UML de clases
+				2. Diagramas de secuencia
+			7. Tecnología utilizada
+				1. Neo4j
+				2. Guice
+                    1. Binding
+                    2. Injection
+                    3. AOP
+				3. Guava
+				4. Reflections				
+		4. Capa de visualización y aplicación
+			1. Interfaz asíncrona REST
+			2. Visualización y búsquedas sobre el grafo
+			3. Manipulación del grafo
+			4. Diseño
+				1. Casos de uso
+				2. Prototipos
+			5. Tecnología utilizada
+				1. Servidor (Spring, JEE)?
+				2. d3
+				3. GSON
+		4. Herramientas
+			1. Github
+			2. Bubbl (brainstorming)
+			3. Creately, DIA, Modelio (diagramas)
+            4. Markdown
+			5. IDE y plugins
+			6. Blog/project
+	7. Bibliografía
+2. Requisitos del Sistema
+	1. Web de importación/manipulación de datos genéticos mediante una BD en grafo
+		1. Entrada y salida de datos
+			1. El sistema debe leer ficheros formato GEDCOM 5
+			2. El sistema adopta el estándar GEDCOM X y trabajará internamente con el modelo que propone GEDCOM X			
+			3. El sistema debe permitir exportar los datos del grafo a un fichero 5 y X
+			4. Se utilizarán las APIs de FAMILY SEARCH que permiten leer y escribir ficheros 5 y X			
+		2. Almacenamiento de datos
+			1. Se creará un módulo reutilizable capaz de almacenar datos GEDCOM X en una GraphDB
+			2. Se utilizará la API neo4J
+		3. Casos de uso
+			1. Importar los datos de un fichero GEDCOM 5 o GEDCOM X
+			2. Exportar los datos del grafo al formato GEDCOM 5 o GEDCOM X
+			3. Operaciones sobre el grafo
+				1. Editar atributos de entidades
+		4. Documentación del código
+			1. Javadoc
+			2. Tests unitarios
+		4. Código abierto
+			1. Código en github
+			2. Distribución Maven
